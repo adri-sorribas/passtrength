@@ -36,3 +36,45 @@ Then, before your closing ```<body>``` tag add:
 ```html
 <script type="text/javascript" src="js/jquery.passtrength.min.js"></script>
 ```
+
+#### Package Managers
+
+```sh
+# NPM
+npm install 
+```
+
+#### Initiate the plugin
+
+Una vez incluidos los archivos necesarios deberemos inicializar el plugin. La forma básica sera;
+
+```js
+$('#myPassword').passtrength();
+```
+
+Si queremos modificar las opciones:
+```js
+$('#myPassword').passtrength({
+  minChars: 8,
+  passwordToggle: true,
+  tooltip: true,
+  textWeak: "Weak",
+  textMedium: "Medium",
+  textStrong: "Strong",
+  textVeryStrong: "Very Strong",
+  eyeImg : "img/eye.svg"
+});
+```
+
+### Settings
+
+Option | Type | Default | Description
+------ | ---- | ------- | -----------
+minChars | int | 8 | Define el mínimo de caracteres que debe introducir el usuario
+passwordToggle | boolean | true | Activa o desactiva la opción de mostrar/esconder la contraseña
+tooltip | boolean | true | Activa o desactiva la opción de mostrar el tooltip con el estado.
+autoplaySpeed | int  | 3000 | Auto play change interval
+textWeak | string | "Weak" | Custom text para el estado "weak"
+textMedium | string | "Medium" | Custom text para el estado "medium"
+textStrong | string | "Strong" | Custom text para el estado "weak"
+textVeryStrong | string | "Very Strong" | Custom text para el estado "very-strong"
