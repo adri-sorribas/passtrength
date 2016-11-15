@@ -1,0 +1,24 @@
+{
+  "name": "passtrength",
+  "license": "MIT",
+  "authors": [
+    "Adri Sorribas <adriansorribasherenas@gmail.com>"
+  ],
+  "description": "passtrength",
+  "homepage": "passtrength",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "boilerplate",
+    "jquery-plugin"
+  ],
+  "main": "src/jquery.boilerplate.js",
+  "dependencies": {
+    "jquery": "1"
+  },
+  "ignore": [
+    "npm-debug.log",
+    "bower_components",
+    "node_modules"
+  ]
+}

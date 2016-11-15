@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PASSTRENGTH JS DEMO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/passtrength.css" media="screen" title="no title">
+  </head>
+  <body>
+
+    <form action="" method="get" accept-charset="utf-8">
+      <input id="myPassword" type="password" name="" value="">
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/jquery.passtrength.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function($) {
+        $('#myPassword').passtrength({
+          minChars: 4,
+          passwordToggle: true,
+          tooltip: true
+        });
+      });
+      </script>
+  </body>
+</html>
