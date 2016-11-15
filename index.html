@@ -8,42 +8,160 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/passtrength.css" media="screen">
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Passtrength</h1>
-      <h2 class="project-tagline">Fully responsive jQuery input password strength indicator plugin. Featuring multiple strength security indicators and show/hide password</h2>
+      <h1 class="project-name">PASSTRENGTH JS</h1>
+      <h2 class="project-tagline">Fully responsive jQuery input password strength indicator plugin. </br> Featuring multiple strength security indicators and show/hide password</h2>
       <a href="https://github.com/adri-sorribas/passtrength" class="btn">View on GitHub</a>
       <a href="https://github.com/adri-sorribas/passtrength/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/adri-sorribas/passtrength/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+      <div class="demo">
+        <h1>Demo</h1>
+        <p>Type and test your password</p>
+        <input type="password" id="myPassword" name="name" value="">
+        <p class="example">
+          <strong>Weak example:</strong> qwerty
+        </p>
+        <p class="example">
+          <strong>Medium example:</strong> Qwerty
+        </p>
+        <p class="example">
+          <strong>Strong example:</strong> Qwerty@
+        </p>
+        <p class="example">
+          <strong>Very Strong example:</strong> 2Qwerty@
+        </p>
+      </div>
+<article class="markdown-body entry-content" itemprop="text">
+  <h1>Passtrength.js</h1>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p>Fully responsive jQuery input password strength indicator plugin. Featuring multiple strength security indicators and show/hide password — Edit</p>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+<h3>Documentation</h3>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+<p>Passtrength JS provides a basic visual system that indicates the strength of the password entered in any input type password.</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>This basic indication system is based on 4 points based on the password entered:</p>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<ul>
+<li>The password entered contains X characters or more.</li>
+<li>The password entered contains capital letters.</li>
+<li>The password entered contains numbers.</li>
+<li>The password entered contains special characters. [!,%,&amp;,@,#,$,^,*,?,_,~]</li>
+</ul>
 
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<h3>Features</h3>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<ul>
+<li>Progress bar visual indicator.</li>
+<li>Show/Hide password system (optional).</li>
+<li>Custom number of minimum characters.</li>
+<li>Custom Show/Hide icon.</li>
+<li>Visual indicator "Tooltip" with custom message (optional).</li>
+</ul>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<h3>Getting Started</h3>
 
+<h5>Include plguin files</h5>
+
+<p>Just add a link to the css file in your <code>&lt;head&gt;</code>:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>css/passtrength.css<span class="pl-pds">"</span></span>/&gt;</pre></div>
+
+<p>Then, before your closing <code>&lt;body&gt;</code> tag add:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>js/jquery.passtrength.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<h4>Package Managers</h4>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"># NPM</span>
+npm install </pre></div>
+
+<h4>initialize the plugin</h4>
+
+<p>Once the necessary files are included you will have to initialize the plugin. The basic way will be;</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#myPassword<span class="pl-pds">'</span></span>).<span class="pl-en">passtrength</span>();</pre></div>
+
+<p>If you need modify the options:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#myPassword<span class="pl-pds">'</span></span>).<span class="pl-en">passtrength</span>({
+  minChars<span class="pl-k">:</span> <span class="pl-c1">8</span>,
+  passwordToggle<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+  tooltip<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+  textWeak<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Weak<span class="pl-pds">"</span></span>,
+  textMedium<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Medium<span class="pl-pds">"</span></span>,
+  textStrong<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Strong<span class="pl-pds">"</span></span>,
+  textVeryStrong<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Very Strong<span class="pl-pds">"</span></span>,
+  eyeImg <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>img/eye.svg<span class="pl-pds">"</span></span>
+});</pre></div>
+
+<h3>Settings</h3>
+
+<table><thead>
+<tr>
+<th>Option</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>minChars</td>
+<td>int</td>
+<td>8</td>
+<td>Defines the minimum characters that the user must enter</td>
+</tr>
+<tr>
+<td>passwordToggle</td>
+<td>boolean</td>
+<td>true</td>
+<td>Enable the show/hide password option</td>
+</tr>
+<tr>
+<td>eyeImg</td>
+<td>string</td>
+<td>"img/eye.svg"</td>
+<td>Path to the image to show/hide password option</td>
+</tr>
+<tr>
+<td>tooltip</td>
+<td>boolean</td>
+<td>true</td>
+<td>Enable the tooltip message option</td>
+</tr>
+<tr>
+<td>textWeak</td>
+<td>string</td>
+<td>"Weak"</td>
+<td>Custom text for the "weak" status</td>
+</tr>
+<tr>
+<td>textMedium</td>
+<td>string</td>
+<td>"Medium"</td>
+<td>Custom text for the "medium" status</td>
+</tr>
+<tr>
+<td>textStrong</td>
+<td>string</td>
+<td>"Strong"</td>
+<td>Custom text for the "strong" status</td>
+</tr>
+<tr>
+<td>textVeryStrong</td>
+<td>string</td>
+<td>"Very Strong"</td>
+<td>Custom text for the "very-strong" status</td>
+</tr>
+</tbody></table>
+</article>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/adri-sorribas/passtrength">Passtrength</a> is maintained by <a href="https://github.com/adri-sorribas">adri-sorribas</a>.</span>
 
@@ -52,6 +170,21 @@
 
     </section>
 
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.passtrength.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
+      $(document).ready(function($) {
+        $('#myPassword').passtrength({
+          minChars: 3,
+          passwordToggle: true,
+          tooltip: true,
+          textWeak: "Weak",
+          textMedium: "Medium",
+          textStrong: "Strong",
+          textVeryStrong: "Very Strong",
+          eyeImg : "img/eye.svg"
+        });
+      });
+      </script>
   </body>
 </html>
