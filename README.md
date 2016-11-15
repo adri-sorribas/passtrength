@@ -22,7 +22,7 @@ Este sistema básico de indiacción se basa en 4 puntos en base a la contraseña
 - Indicador visual progress bar.
 - Indicador visual "tooltip" con mensaje custom (opcional).
 
-#### Getting Started
+### Getting Started
 
 ##### Include plguin files
 
