@@ -5,14 +5,15 @@ Fully responsive jQuery input password strength indicator plugin. Featuring mult
 
 ### Documentation
 
-Passtrength JS propociona un sistema básico que indica la fuerza de la contraseña introducida en cualquier input de tipo password a nivel visual de cara al usuario.
+Passtrength JS provides a basic visual system that indicates the strength of the password entered in any input type password.
 
-Este sistema básico de indiacción se basa en 4 puntos en base a la contraseña introducida:
 
-- La contraseña introducida contiene X caracteres o más.
-- La contraseña introducida contiene mayúsculas.
-- La contraseña introducida contiene números.
-- La contraseña introducida contiene caracteres especiales. [!,%,&,@,#,$,^,*,?,_,~]
+This basic indication system is based on 4 points based on the password entered:
+
+- The password entered contains X characters or more.
+- The password entered contains capital letters.
+- The password entered contains numbers.
+- The password entered contains special characters. [!,%,&,@,#,$,^,*,?,_,~]
 
 ### Demo
 
@@ -20,11 +21,11 @@ Este sistema básico de indiacción se basa en 4 puntos en base a la contraseña
 
 ### Features
 
-- Número mínimo de caracteres custom.
-- Sistema para mostar/esconder la contraseña (opcional)
-- Icono para mostrar/esconder custom.
-- Indicador visual progress bar.
-- Indicador visual "tooltip" con mensaje custom (opcional).
+- Progress bar visual indicator.
+- Show/Hide password system (optional).
+- Custom number of minimum characters.
+- Custom Show/Hide icon.
+- Visual indicator "Tooltip" with custom message (optional).
 
 ### Getting Started
 
@@ -41,7 +42,7 @@ Then, before your closing ```<body>``` tag add:
 <script type="text/javascript" src="js/jquery.passtrength.min.js"></script>
 ```
 
-#### Package Managers
+#### [WIP] Package Managers
 
 ```sh
 # NPM
@@ -50,13 +51,12 @@ npm install
 
 #### Initiate the plugin
 
-Una vez incluidos los archivos necesarios deberás inicializar el plugin. La forma básica sera;
-
+Once the necessary files are included you will have to initialize the plugin. The basic way will be;
 ```js
 $('#myPassword').passtrength();
 ```
 
-Si necesitas modificar las opciones:
+If you need modify the options:
 ```js
 $('#myPassword').passtrength({
   minChars: 8,
@@ -74,12 +74,11 @@ $('#myPassword').passtrength({
 
 Option | Type | Default | Description
 ------ | ---- | ------- | -----------
-minChars | int | 8 | Define el mínimo de caracteres que debe introducir el usuario
-passwordToggle | boolean | true | Activa o desactiva la opción de mostrar/esconder la contraseña
-tooltip | boolean | true | Activa o desactiva la opción de mostrar el tooltip con el estado.
-autoplaySpeed | int  | 3000 | Auto play change interval
-textWeak | string | "Weak" | Custom text para el estado "weak"
-textMedium | string | "Medium" | Custom text para el estado "medium"
-textStrong | string | "Strong" | Custom text para el estado "weak"
-textVeryStrong | string | "Very Strong" | Custom text para el estado "very-strong"
-eyeImg | string | "img/eye.svg" | Ruta hacia la imagen para mostrar/ocultar la contraseña
+minChars | int | 8 | Defines the minimum characters that the user must enter
+passwordToggle | boolean | true | Enable the show/hide password option
+eyeImg | string | "img/eye.svg" | Path to the image to show/hide password option
+tooltip | boolean | true | Enable the tooltip message option
+textWeak | string | "Weak" | Custom text for the "weak" status 
+textMedium | string | "Medium" |Custom text for the "medium" status
+textStrong | string | "Strong" | Custom text for the "strong" status
+textVeryStrong | string | "Very Strong" | Custom text for the "very-strong" status
