@@ -82,3 +82,4 @@ textWeak | string | "Weak" | Custom text para el estado "weak"
 textMedium | string | "Medium" | Custom text para el estado "medium"
 textStrong | string | "Strong" | Custom text para el estado "weak"
 textVeryStrong | string | "Very Strong" | Custom text para el estado "very-strong"
+eyeImg | string | "img/eye.svg" | Ruta hacia la imagen para mostrar/ocultar la contraseña
