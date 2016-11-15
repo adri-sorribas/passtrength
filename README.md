@@ -42,11 +42,11 @@ Then, before your closing ```<body>``` tag add:
 <script type="text/javascript" src="js/jquery.passtrength.min.js"></script>
 ```
 
-#### [WIP] Package Managers
+#### Package Managers
 
 ```sh
 # NPM
-npm install 
+npm install passtrength
 ```
 
 #### initialize the plugin
