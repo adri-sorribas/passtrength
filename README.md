@@ -14,6 +14,10 @@ Este sistema básico de indiacción se basa en 4 puntos en base a la contraseña
 - La contraseña introducida contiene números.
 - La contraseña introducida contiene caracteres especiales. [!,%,&,@,#,$,^,*,?,_,~]
 
+### Demo
+
+[https://adri-sorribas.github.io/passtrength/](https://adri-sorribas.github.io/passtrength/)
+
 ### Features
 
 - Número mínimo de caracteres custom.
@@ -46,13 +50,13 @@ npm install
 
 #### Initiate the plugin
 
-Una vez incluidos los archivos necesarios deberemos inicializar el plugin. La forma básica sera;
+Una vez incluidos los archivos necesarios deberás inicializar el plugin. La forma básica sera;
 
 ```js
 $('#myPassword').passtrength();
 ```
 
-Si queremos modificar las opciones:
+Si necesitas modificar las opciones:
 ```js
 $('#myPassword').passtrength({
   minChars: 8,
