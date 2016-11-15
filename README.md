@@ -3,6 +3,10 @@ Passtrength.js
 
 Fully responsive jQuery input password strength indicator plugin. Featuring multiple strength security indicators and show/hide password — Edit
 
+### Demo
+
+[https://adri-sorribas.github.io/passtrength/](https://adri-sorribas.github.io/passtrength/)
+
 ### Documentation
 
 Passtrength JS provides a basic visual system that indicates the strength of the password entered in any input type password.
@@ -14,10 +18,6 @@ This basic indication system is based on 4 points based on the password entered:
 - The password entered contains capital letters.
 - The password entered contains numbers.
 - The password entered contains special characters. [!,%,&,@,#,$,^,*,?,_,~]
-
-### Demo
-
-[https://adri-sorribas.github.io/passtrength/](https://adri-sorribas.github.io/passtrength/)
 
 ### Features
 
