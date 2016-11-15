@@ -49,7 +49,7 @@ Then, before your closing ```<body>``` tag add:
 npm install 
 ```
 
-#### Initiate the plugin
+#### initialize the plugin
 
 Once the necessary files are included you will have to initialize the plugin. The basic way will be;
 ```js
