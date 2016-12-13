@@ -12,7 +12,7 @@
     "boilerplate",
     "jquery-plugin"
   ],
-  "main": "src/jquery.boilerplate.js",
+  "main": "src/jquery.passtrength.js",
   "dependencies": {
     "jquery": "1"
   },
