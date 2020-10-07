@@ -88,7 +88,6 @@
     },
 
     addStatus: function(percentage){
-      debugger;
       var status = "",
           text = this.options.minCharsText,
           meter = $(this.element).closest(".passtrengthMeter"),
