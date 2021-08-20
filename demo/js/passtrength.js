@@ -155,14 +155,3 @@
   };
 
 })(jQuery, window, document);
-
-// Apply to UI
-$(document).ready(function($) {
-  $('form#frmSignUp input#fldPW1,form#frmSignUp input#fldPW2,form#frmLogin input#fldNewPassword,form#frmLogin input#fldChkPassword,form#modalUserForm input#fldPassword,form#modalUserForm input#fldConfirmPassword').passtrength({
-    minChars: 8,
-    passwordToggle: true,
-    tooltip: true,
-    formSubmitBtnSelector: 'form#frmSignUp .btn-signin,form#frmLogin .btn-primary.btn-save,div#dlgEdit button#saveUserBtn',
-    preventFormSubmitPercent: 50
-  });
-});
